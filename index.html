@@ -14,7 +14,7 @@
   <header class="site-header" id="top">
     <div class="container header-inner">
       <a href="#top" class="logo logo-image-link">
-        <img src="assets/logo.png" alt="Setia Point Hotel" class="logo-img" width="200" height="80">
+        <img src="assets/logo.png" alt="Setia Point Hotel" class="logo-img" width="1024" height="723">
       </a>
       <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
         <span class="nav-toggle-bar"></span>
@@ -28,6 +28,7 @@
           <li><a href="#rooms">Rooms</a></li>
           <li><a href="#facilities">Facilities</a></li>
           <li><a href="#events">Events</a></li>
+          <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -53,7 +54,7 @@
           <h2 id="about-heading">Your Home in Berakas</h2>
         </div>
         <div class="about-banner reveal">
-          <img src="assets/images/hero-lobby.jpg" alt="Setia Point Hotel lobby and lounge" width="1600" height="1050" loading="lazy">
+          <img src="assets/images/hero-lobby.jpg" alt="Setia Point Hotel lobby and lounge" width="1600" height="719" loading="lazy">
         </div>
         <div class="two-col reveal">
           <div class="prose">
@@ -88,6 +89,7 @@
           </div>
         </div>
       </div>
+      <div class="gallery-strip" data-gallery-marquee="0" aria-label="Hotel interior and lobby photos"></div>
     </section>
 
     <section class="section" id="destination" aria-labelledby="destination-heading">
@@ -97,8 +99,8 @@
             <img
               src="assets/images/destination-building.jpg"
               alt="Setia Point Hotel building exterior with gold accents and SETIA POINT signage"
-              width="1004"
-              height="1004"
+              width="1254"
+              height="1254"
               loading="lazy"
             >
           </div>
@@ -132,6 +134,7 @@
             </div>
             <div class="room-card-body">
               <h3>Classic King</h3>
+              <p class="room-size">25 m² · 269 ft²</p>
               <p class="room-occupancy">2 adults · 1 child</p>
             </div>
           </article>
@@ -142,7 +145,8 @@
             </div>
             <div class="room-card-body">
               <h3>Deluxe King or Twin</h3>
-              <p class="room-occupancy">2 adults · 1 child</p>
+              <p class="room-size">36 m² · 387 ft²</p>
+              <p class="room-occupancy">2 adults · 1 child <span class="room-occupancy-or">or</span> 2 adults · 2 children</p>
             </div>
           </article>
           <article class="room-card">
@@ -152,7 +156,8 @@
             </div>
             <div class="room-card-body">
               <h3>Grand Deluxe King or Twin</h3>
-              <p class="room-occupancy">2 adults · 1 child · 2 adults · 2 children</p>
+              <p class="room-size">59 m² · 635 ft²</p>
+              <p class="room-occupancy">2 adults · 1 child <span class="room-occupancy-or">or</span> 2 adults · 2 children</p>
             </div>
           </article>
           <article class="room-card">
@@ -162,7 +167,13 @@
             </div>
             <div class="room-card-body">
               <h3>Suite King or Twin</h3>
+              <p class="room-size">42 m² · 452 ft²</p>
               <p class="room-occupancy">2 adults · 2 children</p>
+            </div>
+          </article>
+          <article class="room-card room-card-visual">
+            <div class="room-card-image">
+              <img src="assets/images/room-hallway.jpg" alt="Setia Point Hotel corridor with hexagonal wall lighting" width="580" height="435" loading="lazy">
             </div>
           </article>
           <article class="room-card room-card-featured">
@@ -172,12 +183,14 @@
             </div>
             <div class="room-card-body">
               <h3>Family Suite</h3>
+              <p class="room-size">100 m² · 1,076 ft²</p>
               <p class="room-occupancy">4 adults · 4 children</p>
             </div>
           </article>
         </div>
         <p class="room-disclaimer reveal">* Terms and conditions apply in accordance with hotel policies and regulations.</p>
       </div>
+      <div class="gallery-strip" data-gallery-marquee="1" aria-label="Guest room and suite photos"></div>
     </section>
 
     <section class="section" id="family-suite" aria-labelledby="family-suite-heading">
@@ -186,15 +199,17 @@
           <div class="family-suite-gallery">
             <img
               src="assets/images/family-suite-living.jpg"
-              alt="Family suite living area at Setia Point Hotel"
-              width="869"
-              height="652"
+              alt="Family suite living area with kitchenette and balcony at Setia Point Hotel"
+              width="1024"
+              height="768"
               loading="lazy"
               class="family-img-main"
             >
-            <div class="family-img-row">
-              <img src="assets/images/family-suite-bathroom.jpg" alt="Family suite bathroom" width="540" height="960" loading="lazy">
-              <img src="assets/images/family-suite-bedroom.jpg" alt="Family suite bedroom" width="1120" height="630" loading="lazy">
+            <div class="family-img-grid">
+              <img src="assets/images/family-suite-twin-bedroom.jpg" alt="Family suite twin bedroom" width="1024" height="576" loading="lazy">
+              <img src="assets/images/family-suite-master-bedroom.jpg" alt="Family suite master bedroom" width="1024" height="576" loading="lazy">
+              <img src="assets/images/family-suite-bath-detail.jpg" alt="Family suite bathtub amenities" width="525" height="477" loading="lazy">
+              <img src="assets/images/family-suite-bathroom.jpg" alt="Family suite bathroom with shower and tub" width="1024" height="576" loading="lazy">
             </div>
           </div>
           <div class="family-suite-copy">
@@ -211,8 +226,8 @@
                 src="assets/images/family-suite-floorplan.jpg"
                 alt="Family suite floor plan"
                 class="floor-plan-image"
-                width="1344"
-                height="756"
+                width="1600"
+                height="900"
                 loading="lazy"
               >
             </div>
@@ -230,32 +245,51 @@
         </div>
         <div class="facility-showcase reveal">
           <figure class="facility-feature">
-            <img src="assets/images/facility-pool.jpg" alt="Setia Point Hotel swimming pool" width="449" height="800" loading="lazy">
+            <img src="assets/images/facility-pool.jpg" alt="Setia Point Hotel swimming pool" width="1600" height="900" loading="lazy">
             <figcaption>Swimming Pool</figcaption>
           </figure>
           <figure class="facility-feature">
-            <img src="assets/images/facility-parking.jpg" alt="Setia Point Hotel parking" width="450" height="800" loading="lazy">
+            <img src="assets/images/facility-parking.jpg" alt="Setia Point Hotel parking" width="900" height="1600" loading="lazy">
             <figcaption>Parking Space</figcaption>
           </figure>
           <figure class="facility-feature">
-            <img src="assets/images/facility-event-space.jpg" alt="Setia Point Hotel event space" width="724" height="543" loading="lazy">
+            <img src="assets/images/facility-event-space.jpg" alt="Setia Point Hotel event space" width="1280" height="960" loading="lazy">
             <figcaption>Event Space</figcaption>
           </figure>
         </div>
         <p class="facilities-prose reveal">Key facilities include well-appointed guest rooms, welcoming reception areas, spacious parking facilities, and recreational spaces designed to accommodate both leisure and business travelers. Guests may also enjoy a selection of carefully curated amenities, including complimentary high-speed WiFi, premium bath essentials, plush bedding, and 24-hour room service, all thoughtfully provided to enhance comfort, relaxation, and everyday convenience throughout their stay.</p>
         <figure class="amenities-photo reveal">
-          <img src="assets/images/facility-amenities.jpg" alt="In-room amenities including kettle, mugs, and bath essentials" width="1500" height="892" loading="lazy">
+          <img src="assets/images/facility-amenities.jpg" alt="Setia Point Hotel branded towels and in-room amenities" width="900" height="1600" loading="lazy">
           <figcaption>In-room amenities and guest comforts</figcaption>
         </figure>
         <ul class="amenity-grid reveal" aria-label="In-room and hotel amenities">
-          <li><span class="amenity-icon" aria-hidden="true">&#9679;</span> Free WiFi</li>
-          <li><span class="amenity-icon" aria-hidden="true">&#9679;</span> Clothing Iron Set</li>
-          <li><span class="amenity-icon" aria-hidden="true">&#9679;</span> Kettle and Tray Set</li>
-          <li><span class="amenity-icon" aria-hidden="true">&#9679;</span> Hair Dryer</li>
-          <li><span class="amenity-icon" aria-hidden="true">&#9679;</span> Premium Bath Essentials</li>
-          <li><span class="amenity-icon" aria-hidden="true">&#9679;</span> 24-hour Room Service</li>
+          <li class="amenity-item">
+            <img src="assets/images/amenities/wifi.png" alt="" class="amenity-item-icon" width="80" height="80">
+            <span class="amenity-item-label">Free WiFi</span>
+          </li>
+          <li class="amenity-item">
+            <img src="assets/images/amenities/iron.png" alt="" class="amenity-item-icon" width="80" height="80">
+            <span class="amenity-item-label">Clothing Iron Set</span>
+          </li>
+          <li class="amenity-item">
+            <img src="assets/images/amenities/kettle.png" alt="" class="amenity-item-icon" width="80" height="80">
+            <span class="amenity-item-label">Kettle and Tray Set</span>
+          </li>
+          <li class="amenity-item">
+            <img src="assets/images/amenities/hair-dryer.png" alt="" class="amenity-item-icon" width="80" height="80">
+            <span class="amenity-item-label">Hair Dryer</span>
+          </li>
+          <li class="amenity-item">
+            <img src="assets/images/amenities/bath-essentials.png" alt="" class="amenity-item-icon" width="80" height="80">
+            <span class="amenity-item-label">Premium Bath Essentials</span>
+          </li>
+          <li class="amenity-item">
+            <img src="assets/images/amenities/room-service.png" alt="" class="amenity-item-icon" width="80" height="80">
+            <span class="amenity-item-label">24-hour Room Service</span>
+          </li>
         </ul>
       </div>
+      <div class="gallery-strip gallery-strip--compact" data-gallery-marquee="0" aria-label="Pool and facilities photos"></div>
     </section>
 
     <section class="section" id="events" aria-labelledby="events-heading">
@@ -268,14 +302,14 @@
         <p class="events-prose reveal">Featuring a modern layout, customizable event settings, and a convenient location in the Berakas area, the venue provides a refined atmosphere suitable for both intimate occasions and large-scale events. With its flexible space and welcoming ambiance, the Event Hall serves as the perfect setting to transform every occasion into a seamless, memorable, and meaningful experience for guests and hosts alike.</p>
         <div class="event-hall-grid reveal">
           <article class="event-card">
-            <img src="assets/images/event-munawwarah.jpg" alt="Munawwarah Hall at Setia Point" width="869" height="652" loading="lazy">
+            <img src="assets/images/event-munawwarah.jpg" alt="Munawwarah Hall at Setia Point" width="1280" height="732" loading="lazy">
             <div class="event-card-body">
               <h3>Munawwarah Hall</h3>
               <p>Ideal for weddings, corporate functions, and large celebrations.</p>
             </div>
           </article>
           <article class="event-card">
-            <img src="assets/images/event-mawwaddah.jpg" alt="Mawwaddah Hall at Setia Point" width="869" height="652" loading="lazy">
+            <img src="assets/images/event-mawwaddah.jpg" alt="Mawwaddah Hall at Setia Point" width="1280" height="960" loading="lazy">
             <div class="event-card-body">
               <h3>Mawwaddah Hall</h3>
               <p>Versatile space for private gatherings and refined occasions.</p>
@@ -283,6 +317,18 @@
           </article>
         </div>
       </div>
+    </section>
+
+    <section class="section gallery-section" id="gallery" aria-labelledby="gallery-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Gallery</span>
+          <h2 id="gallery-heading">Experience Setia Point</h2>
+          <p class="section-intro">A glimpse of our lobby, rooms, pool, corridors, and everyday spaces — continuously scrolling through more moments from the hotel.</p>
+        </div>
+      </div>
+      <div class="gallery-marquee-wrap reveal" data-gallery-marquee="0" aria-label="Hotel photo gallery row one"></div>
+      <div class="gallery-marquee-wrap gallery-marquee-wrap--reverse reveal" data-gallery-marquee="1" aria-label="Hotel photo gallery row two"></div>
     </section>
 
     <section class="section section-beige" id="contact" aria-labelledby="contact-heading">
@@ -360,13 +406,14 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <img src="assets/logo.png" alt="Setia Point Hotel" class="footer-logo" width="220" height="88">
+        <img src="assets/logo.png" alt="Setia Point Hotel" class="footer-logo" width="1024" height="723">
       </div>
       <p class="footer-tagline">Comfort in Every Stay, Hospitality in Every Smile</p>
       <p class="footer-copy">&copy; <span id="year"></span> Setia Point Hotel. Sample reference site.</p>
     </div>
   </footer>
 
+  <script src="js/gallery-images.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -57,4 +57,63 @@
       el.classList.add("is-visible");
     });
   }
+
+  var galleryImages = window.GALLERY_IMAGES;
+  var galleryHosts = document.querySelectorAll("[data-gallery-marquee]");
+
+  if (galleryImages && galleryImages.length && galleryHosts.length) {
+    var midpoint = Math.ceil(galleryImages.length / 2);
+
+    function sliceForTrack(index) {
+      if (index === "1") {
+        return galleryImages.slice(midpoint);
+      }
+      return galleryImages.slice(0, midpoint);
+    }
+
+    function createCard(item) {
+      var figure = document.createElement("figure");
+      figure.className = "gallery-card";
+      var img = document.createElement("img");
+      img.src = item.src;
+      img.alt = item.alt;
+      img.width = item.width;
+      img.height = item.height;
+      img.loading = "lazy";
+      img.decoding = "async";
+      figure.appendChild(img);
+      return figure;
+    }
+
+    function buildGroup(items) {
+      var group = document.createElement("div");
+      group.className = "gallery-group";
+      items.forEach(function (item) {
+        group.appendChild(createCard(item));
+      });
+      return group;
+    }
+
+    galleryHosts.forEach(function (host) {
+      var trackIndex = host.getAttribute("data-gallery-marquee");
+      var items = sliceForTrack(trackIndex);
+      if (!items.length) {
+        return;
+      }
+
+      var track = document.createElement("div");
+      track.className = "gallery-track";
+
+      var primary = buildGroup(items);
+      var duplicate = primary.cloneNode(true);
+      duplicate.setAttribute("aria-hidden", "true");
+      duplicate.querySelectorAll("img").forEach(function (img) {
+        img.alt = "";
+      });
+
+      track.appendChild(primary);
+      track.appendChild(duplicate);
+      host.appendChild(track);
+    });
+  }
 })();
