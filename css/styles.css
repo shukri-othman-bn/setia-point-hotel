@@ -38,6 +38,7 @@ body {
   line-height: 1.65;
   color: var(--text);
   background: var(--white);
+  overflow-x: hidden;
 }
 
 img {
@@ -917,14 +918,6 @@ h3 { font-size: 1.5rem; }
 }
 
 /* Auto-scrolling photo gallery */
-.gallery-strip {
-  margin-top: clamp(2rem, 5vw, 3rem);
-}
-
-.gallery-strip--compact {
-  margin-top: 2rem;
-}
-
 .gallery-section {
   padding-bottom: clamp(3rem, 6vw, 4rem);
 }
@@ -962,10 +955,6 @@ h3 { font-size: 1.5rem; }
   animation-duration: 62s;
 }
 
-.gallery-strip .gallery-track {
-  animation-duration: 42s;
-}
-
 .gallery-group {
   display: flex;
   gap: 1rem;
@@ -988,8 +977,7 @@ h3 { font-size: 1.5rem; }
   object-fit: cover;
 }
 
-.gallery-marquee-wrap:hover .gallery-track,
-.gallery-strip:hover .gallery-track {
+.gallery-marquee-wrap:hover .gallery-track {
   animation-play-state: paused;
 }
 
