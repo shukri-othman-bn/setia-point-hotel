@@ -366,14 +366,16 @@ h3 { font-size: 1.5rem; }
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-hover);
+  background: var(--beige);
+  padding: 14px;
 }
 
 .destination-image-wrap img {
   width: 100%;
-  height: auto;
-  max-height: 520px;
-  object-fit: contain;
-  background: var(--beige-dark);
+  aspect-ratio: 768 / 1024;
+  object-fit: cover;
+  border-radius: calc(var(--radius-lg) - 4px);
+  display: block;
 }
 
 .destination-bullets {
