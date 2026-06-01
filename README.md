@@ -36,7 +36,7 @@ assets/         Put your logo and real photos here later
 
 | Item | Current sample | Action |
 |------|----------------|--------|
-| Email | `reservations@setiapoint.bn` (placeholder) | Set official hotel email |
+| Email | `reception.setiapointhotel@gmail.com` | Set official hotel email |
 | Phone | +673 235 1022 | Confirm number |
 | Social links | `#` placeholders | Add real Facebook / Instagram URLs |
 | Images | Real hotel photos in `assets/images/` (from staff WhatsApp set, Jun 2026) | Replace individual JPGs if higher-res versions available |
